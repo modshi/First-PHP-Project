@@ -1,0 +1,49 @@
+body {
+    background-color: #efefef;
+    margin: 0;
+}
+h1 {
+    font-size: 32px;
+}
+h1 a {
+
+}
+
+.main-header {
+    top: 0;
+    min-height: 100px;
+    background-color: crimson;
+    overflow: hidden;
+}
+.main-header a {
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: 1.8s;
+
+}
+.main-header a:hover {
+    transition: 1.8s;
+    text-decoration: underline;
+}
+.wrap {
+    width: 70%;
+    margin: 0 auto;
+    padding: 20px 0;
+    overflow: hidden;
+}
+.title {
+    float: left;
+}
+.user-control {
+    float: right;
+}
+.user-control span {
+    float: right;
+}
+.main-footer {
+    background-color: #000000;
+    color: #FFFFFF;
+}
+.main-footer a {
+    text-decoration: underline;
+}
