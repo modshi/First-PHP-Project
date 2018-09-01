@@ -7,7 +7,7 @@ get_header()
 ?>
 
 
-<h1>HOME</h1>
+<h1>home Page</h1>
 
 <?php
 
