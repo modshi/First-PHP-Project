@@ -43,7 +43,7 @@ if (isset($_POST["submit"])){
                     $hashedPwd = password_hash($password, PASSWORD_DEFAULT);
                     $sql = "INSERT INTO users (user_first, user_last, user_name, user_email, user_pwd) VALUES ('$firstName', '$lastName', '$userName', '$email', '$hashedPwd');";
                     mysqli_query($connectDB, $sql);
-                    header("Location: signup.php?signup=OK");
+                    header("Location: welcome.php");
                     exit();
                 }
             }

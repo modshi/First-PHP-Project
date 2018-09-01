@@ -8,6 +8,17 @@ h1 {
 h1 a {
 
 }
+.text-center {
+    text-align: center;
+}
+.center {
+    display: block;
+    margin: 10px auto;
+}
+.alert {
+    color: red;
+    text-align: center;
+}
 
 .main-header {
     top: 0;

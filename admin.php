@@ -1,20 +1,15 @@
 <?php
 
-include_once 'theme/header.php';
-include_once 'include/db.inc.php';
-include_once 'include/admin.inc.php';
+require 'include/functions.inc.php';
+
+get_header();
+is_admin();
 
 ?>
-
-
-
 
 <h2>Admin Page</h2>
 
 <h3>Users:</h3>
-
-
-
 
 <?php
 
@@ -27,6 +22,7 @@ $resultsCount = mysqli_num_rows( $result );
         // Show the results.
         echo '<ul>';
         while ( $row = mysqli_fetch_assoc( $result ) ) {
+            echo '<pre>';
             echo '<p>' . $row['user_name'] . '</p>';
             echo '<p>' . $row['user_email'] . '</p>';
             echo '<p>' . $row['user_id'] . '</p>';

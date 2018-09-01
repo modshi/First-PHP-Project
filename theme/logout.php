@@ -9,7 +9,7 @@
 
 
 
-<?php if (isset($_SESSION['user_type']) == 1) {
+<?php if (isset($_SESSION['user_type']) && $_SESSION['user_type'] == 1) {
 
     echo "You Are Admin ! <a href='../admin.php'>Admin</a>";
 

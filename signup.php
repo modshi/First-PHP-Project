@@ -1,4 +1,7 @@
-<?php include_once 'theme/header.php';
+<?php
+include_once 'include/functions.inc.php';
+
+get_header();
 
 include_once "include/signup.inc.php";
 

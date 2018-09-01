@@ -1,7 +1,9 @@
 <?php
+require_once 'include/functions.inc.php';
 
-include_once 'theme/header.php';
-include_once 'include/db.inc.php';
+get_header()
+
+
 ?>
 
 
@@ -13,6 +15,9 @@ $sql = 'SELECT * FROM posts ORDER BY id DESC';
 $result = mysqli_query($connectDB, $sql);
 $posts  = "";
 
+if (!$result){
+    echo mysqli_error($connectDB);
+}
 if (mysqli_num_rows($result) > 0) {
     while ($row = mysqli_fetch_assoc($result)) {
         $id = $row['id'];
